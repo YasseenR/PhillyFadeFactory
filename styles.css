@@ -8,14 +8,18 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(149, 125, 165);
+  margin-left: 12.5%;
+  margin-top: 10px;
+
   height: 50px;
-  margin-left: 6.25%;
-  margin-right: 6.25%;
+  position: fixed;
+  top: 0;
+  width: 75%;
+  z-index: 1000;
 }
 
 .navbar-logo {
-  left: 150px;
+  left: 75px;
   margin-top: 20px;
   position: absolute;
 }
@@ -47,35 +51,43 @@ nav {
 .nav-hero-action {
   margin-left: auto;
   margin-right: 10%;
+  color: white;
 }
 
 .hero {
-  background-color: white;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  background-image: url("background.jpeg");
 }
 
 .hero-image {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
   width: 50%;
+  opacity: 100%;
+  z-index: 0;
+  opacity: 50%;
+}
+
+.hero-image img {
+  width: 60%;
+  border-radius: 25%;
   overflow: hidden;
 }
 
 .hero-content {
   display: flex;
+  color: white;
   flex-direction: column;
   text-align: center;
   align-items: center;
   justify-content: center;
   width: 50%;
-  height: 100vh;
-  margin-bottom: 150px;
+  height: 100%;
 }
 
 .hero-content-button {
