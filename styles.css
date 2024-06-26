@@ -2,6 +2,7 @@ body {
   background-color: rgb(22, 22, 22);
   margin: 0;
   padding: 0;
+  font-family: "Open Sans", sans-serif;
 }
 
 nav {
@@ -10,7 +11,6 @@ nav {
   justify-content: center;
   margin-left: 12.5%;
   margin-top: 10px;
-
   height: 50px;
   position: fixed;
   top: 0;
@@ -49,17 +49,52 @@ nav {
 }
 
 .nav-hero-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-left: auto;
   margin-right: 10%;
-  color: white;
+  font-weight: 600;
+  background-color: white;
+  color: rgb(35, 31, 35);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  height: 50px;
+  width: 200px;
 }
 
 .hero {
   height: 100vh;
+  width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  background-image: url("background.jpeg");
+  align-items: top;
+  color: black;
+  background-image: url(background.jpeg);
+  overflow: hidden;
+}
+
+.hero-section-1 {
+  margin-top: 75px;
+  display: flex;
+  height: 50%;
+  width: 100%;
+  background-image: url("hero4.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero-section-2 {
+  margin-top: 10px;
+  display: flex;
+  height: 50%;
+  width: 100%;
+  background-image: url("hero5.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero-image {
@@ -81,7 +116,7 @@ nav {
 
 .hero-content {
   display: flex;
-  color: white;
+  color: black;
   flex-direction: column;
   text-align: center;
   align-items: center;
@@ -90,6 +125,30 @@ nav {
   height: 100%;
 }
 
+.hero-content-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .hero-content-button {
-  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 25px;
+  background-color: rgb(35, 31, 35);
+  color: white;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: box-shadow, height 0.3s ease;
+  border-radius: 20px;
+  height: 50px;
+  width: 225px;
+}
+
+.hero-content-button:hover {
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  height: 52px;
 }
