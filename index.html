@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Philly Fade Factory</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -75,24 +76,24 @@
 
     </div>
 
-    <div class="hours">
-      <div class="hours-title">
-        <?xml version="1.0" ?><svg id="Layer_1_1_" style="enable-background:new 0 0 16 16; height: 25px; margin-right: 8px; cursor: pointer;" version="1.1" viewBox="0 0 16 16" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M8,0C3.582,0,0,3.582,0,8s3.582,8,8,8s8-3.582,8-8S12.418,0,8,0z M6.354,13.354l-0.707-0.707L10.293,8L5.646,3.354  l0.707-0.707L11.707,8L6.354,13.354z"/></svg>
-        <h1>Our Hours</h1>
+    <div class="schedule">
+      <div class="location">
+        <h1>Where we are</h1>
+        <iframe width="700" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=-75.28718233108522%2C40.23606561038572%2C-75.2725911140442%2C40.243010613080344&amp;layer=mapnik&amp;marker=40.239538200782334%2C-75.2798867225647" style="border: 1px solid black"></iframe>
       </div>
-      <div>
+      
+      <div class="hours">
+        <div class="hours-title">
+          <h1>Barbershop Hours</h1>
+        </div>
         <div class="hours-day">Mon Closed</div>
-        <br>
+
         <div class="hours-day">Tue 09:00 am – 07:00 pm</div>
-        <br>
+
         <div class="hours-day">Wed 09:00 am – 07:00 pm</div>       
-        <br>
         <div class="hours-day">Thu 09:00 am – 07:00 pm</div>
-        <br>
         <div class="hours-day">Fri 09:00 am – 07:00 pm</div>
-        <br>
         <div class="hours-day">Sat 09:00 am – 06:00 pm</div>
-        <br>
         <div class="hours-day">Sun 10:00 am – 03:00 pm</div>
         
         </div>
@@ -239,5 +240,6 @@
 
   </body>
 
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script src="main.js"></script>
 </html>
