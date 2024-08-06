@@ -1,5 +1,5 @@
 html {
-  background: rgb(37, 36, 36);
+  background: rgb(65, 74, 76);
 }
 
 body {
@@ -18,15 +18,15 @@ body {
 nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-top: 20px;
+  justify-content: center;
   padding: 10px;
   height: 50px;
   position: fixed;
   top: 0;
-  width: 90%;
+  width: 100%;
   z-index: 1000;
   border-radius: 10px;
+  background: rgba(0, 0, 0, 0.8);
 }
 
 .navbar-logo {
@@ -37,37 +37,34 @@ nav {
   height: 125px;
 }
 
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  z-index: 1000;
-  width: 600px;
-  height: 100%;
-  border-radius: 10px;
-  border: 1px black solid;
-  list-style: none;
-  background: rgba(0, 0, 0, 1);
-  background: white;
-}
-
-.navbar ul {
+.nav-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  width: 90%;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  z-index: 1000;
+  width: 50%;
+  height: 100%;
+  color: white;
+  list-style: none;
 }
 
 .navbar li {
-  width: 100%;
+  display: flex;
 }
 
 .navbar li a {
   display: flex;
-  color: black;
+  font-size: 12pt;
+  color: white;
   justify-content: center;
-  width: 100%;
   text-align: center;
   text-decoration: none;
 }
@@ -95,13 +92,11 @@ nav {
   justify-content: center;
   align-items: top;
   color: black;
-  background-image: url(background.jpeg);
   overflow: hidden;
 }
 .hero-section-1 {
-  margin-top: 100px;
   display: flex;
-  height: 50%;
+  height: 100%;
   width: 100%;
   background-image: url("hero4.jpeg");
   background-size: cover;
@@ -109,9 +104,9 @@ nav {
   background-position: center;
 }
 .hero-section-2 {
-  margin-top: 10px;
+  margin-top: 5px;
   display: flex;
-  height: 50%;
+  height: 100%;
   width: 100%;
   background-image: url("hero5.jpeg");
   background-size: cover;
@@ -176,7 +171,7 @@ nav {
   width: 100%;
   height: 750px;
   color: white;
-  background-image: url("background.jpg");
+  background: url("background.jpg");
 }
 
 .location {
@@ -212,20 +207,22 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: baseline;
-  align-items: center;
+  align-items: baseline;
   color: black;
   width: 100%;
   height: 100%;
-  background: white;
 }
 
 .hours-schedule {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: baseline;
-  width: 250px;
-  background: pink;
+  align-items: center;
+  margin-top: 80px;
+  width: 300px;
+  height: 300px;
+  color: black;
+  background: white;
   border-radius: 20px;
 }
 
@@ -234,16 +231,22 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: baseline;
-  font-size: 12pt;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-size: 14pt;
   width: 80%;
 }
 .hours-day {
-  width: 60%;
+  width: 80%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: baseline;
   align-items: center;
   margin-bottom: 5px;
+}
+
+.hours-time {
+  position: absolute;
+  margin-left: 80px;
 }
 .services-section {
   display: flex;
